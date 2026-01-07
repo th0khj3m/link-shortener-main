@@ -17,5 +17,17 @@ export const sessions = pgTable("sessions", {
     }).notNull(),
 });
 
+export const links = pgTable("links", {
+    id: text("id").primaryKey(),
+    originalUrl: text("original_url").notNull(),
+    shortCode: text("short_code").notNull().unique(),
+    description: text("description"),
+    userId: text("user_id").references(() => users.id),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "date" })
+        .defaultNow()
+        .notNull(),
+});
+
 export type User = typeof users.$inferSelect;
 export type Session = typeof sessions.$inferSelect;
+export type Link = typeof links.$inferSelect;
