@@ -52,17 +52,11 @@ export default function Home() {
             traffic, and gain insights with our powerful link management
             platform.
           </p>
-          <div
-            className={cn(
-              "mt-10 flex flex-col gap-4 sm:flex-row sm:gap-6"
-            )}
-          >
+          <div className={cn("mt-10 flex flex-col gap-4 sm:flex-row sm:gap-6")}>
             <Link href="/register">
               <Button
                 size="lg"
-                className={cn(
-                  "h-12 rounded-full px-8 text-base font-semibold"
-                )}
+                className={cn("h-12 rounded-full px-8 text-base font-semibold")}
               >
                 Get Started Free
               </Button>
@@ -71,9 +65,7 @@ export default function Home() {
               <Button
                 variant="outline"
                 size="lg"
-                className={cn(
-                  "h-12 rounded-full px-8 text-base font-semibold"
-                )}
+                className={cn("h-12 rounded-full px-8 text-base font-semibold")}
               >
                 Sign In
               </Button>
@@ -108,11 +100,7 @@ export default function Home() {
             >
               Quick Shortening
             </h3>
-            <p
-              className={cn(
-                "mt-2 text-sm text-zinc-600 dark:text-zinc-400"
-              )}
-            >
+            <p className={cn("mt-2 text-sm text-zinc-600 dark:text-zinc-400")}>
               Transform long URLs into short, shareable links instantly with
               just one click.
             </p>
@@ -139,11 +127,7 @@ export default function Home() {
             >
               Analytics
             </h3>
-            <p
-              className={cn(
-                "mt-2 text-sm text-zinc-600 dark:text-zinc-400"
-              )}
-            >
+            <p className={cn("mt-2 text-sm text-zinc-600 dark:text-zinc-400")}>
               Track clicks, monitor traffic sources, and analyze link
               performance in real-time.
             </p>
@@ -170,13 +154,9 @@ export default function Home() {
             >
               Secure & Reliable
             </h3>
-            <p
-              className={cn(
-                "mt-2 text-sm text-zinc-600 dark:text-zinc-400"
-              )}
-            >
-              Your links are protected with enterprise-grade security and
-              99.9% uptime guarantee.
+            <p className={cn("mt-2 text-sm text-zinc-600 dark:text-zinc-400")}>
+              Your links are protected with enterprise-grade security and 99.9%
+              uptime guarantee.
             </p>
           </div>
 
@@ -201,11 +181,7 @@ export default function Home() {
             >
               Lightning Fast
             </h3>
-            <p
-              className={cn(
-                "mt-2 text-sm text-zinc-600 dark:text-zinc-400"
-              )}
-            >
+            <p className={cn("mt-2 text-sm text-zinc-600 dark:text-zinc-400")}>
               Experience blazing fast redirects with our optimized
               infrastructure worldwide.
             </p>
@@ -214,9 +190,7 @@ export default function Home() {
 
         {/* How It Works Section */}
         <div
-          className={cn(
-            "mt-32 flex w-full flex-col items-center text-center"
-          )}
+          className={cn("mt-32 flex w-full flex-col items-center text-center")}
         >
           <h2
             className={cn(
@@ -232,11 +206,7 @@ export default function Home() {
           >
             Get started in three simple steps
           </p>
-          <div
-            className={cn(
-              "mt-16 grid w-full gap-8 sm:grid-cols-3"
-            )}
-          >
+          <div className={cn("mt-16 grid w-full gap-8 sm:grid-cols-3")}>
             <div className={cn("flex flex-col items-center")}>
               <div
                 className={cn(
@@ -318,16 +288,10 @@ export default function Home() {
             "mt-32 w-full rounded-2xl border border-zinc-200 bg-gradient-to-br from-blue-50 to-cyan-50 p-12 dark:border-zinc-800 dark:from-blue-950/20 dark:to-cyan-950/20"
           )}
         >
-          <div
-            className={cn(
-              "grid gap-8 sm:grid-cols-2 lg:grid-cols-4"
-            )}
-          >
+          <div className={cn("grid gap-8 sm:grid-cols-2 lg:grid-cols-4")}>
             <div className={cn("flex flex-col items-center text-center")}>
               <MousePointerClick
-                className={cn(
-                  "h-10 w-10 text-blue-600 dark:text-blue-400"
-                )}
+                className={cn("h-10 w-10 text-blue-600 dark:text-blue-400")}
               />
               <div
                 className={cn(
@@ -346,9 +310,7 @@ export default function Home() {
             </div>
             <div className={cn("flex flex-col items-center text-center")}>
               <Users
-                className={cn(
-                  "h-10 w-10 text-purple-600 dark:text-purple-400"
-                )}
+                className={cn("h-10 w-10 text-purple-600 dark:text-purple-400")}
               />
               <div
                 className={cn(
@@ -367,9 +329,7 @@ export default function Home() {
             </div>
             <div className={cn("flex flex-col items-center text-center")}>
               <Globe
-                className={cn(
-                  "h-10 w-10 text-green-600 dark:text-green-400"
-                )}
+                className={cn("h-10 w-10 text-green-600 dark:text-green-400")}
               />
               <div
                 className={cn(
@@ -388,9 +348,7 @@ export default function Home() {
             </div>
             <div className={cn("flex flex-col items-center text-center")}>
               <TrendingUp
-                className={cn(
-                  "h-10 w-10 text-orange-600 dark:text-orange-400"
-                )}
+                className={cn("h-10 w-10 text-orange-600 dark:text-orange-400")}
               />
               <div
                 className={cn(
@@ -412,9 +370,7 @@ export default function Home() {
 
         {/* Use Cases Section */}
         <div
-          className={cn(
-            "mt-32 flex w-full flex-col items-center text-center"
-          )}
+          className={cn("mt-32 flex w-full flex-col items-center text-center")}
         >
           <h2
             className={cn(
@@ -442,9 +398,7 @@ export default function Home() {
               )}
             >
               <Sparkles
-                className={cn(
-                  "h-8 w-8 text-yellow-600 dark:text-yellow-400"
-                )}
+                className={cn("h-8 w-8 text-yellow-600 dark:text-yellow-400")}
               />
               <h3
                 className={cn(
@@ -458,8 +412,8 @@ export default function Home() {
                   "mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400"
                 )}
               >
-                Create branded short links for Instagram, Twitter, LinkedIn,
-                and more. Track which platforms drive the most engagement.
+                Create branded short links for Instagram, Twitter, LinkedIn, and
+                more. Track which platforms drive the most engagement.
               </p>
             </div>
             <div
@@ -468,9 +422,7 @@ export default function Home() {
               )}
             >
               <BarChart3
-                className={cn(
-                  "h-8 w-8 text-blue-600 dark:text-blue-400"
-                )}
+                className={cn("h-8 w-8 text-blue-600 dark:text-blue-400")}
               />
               <h3
                 className={cn(
@@ -494,9 +446,7 @@ export default function Home() {
               )}
             >
               <Users
-                className={cn(
-                  "h-8 w-8 text-green-600 dark:text-green-400"
-                )}
+                className={cn("h-8 w-8 text-green-600 dark:text-green-400")}
               />
               <h3
                 className={cn(
@@ -520,9 +470,7 @@ export default function Home() {
               )}
             >
               <Globe
-                className={cn(
-                  "h-8 w-8 text-purple-600 dark:text-purple-400"
-                )}
+                className={cn("h-8 w-8 text-purple-600 dark:text-purple-400")}
               />
               <h3
                 className={cn(
@@ -546,9 +494,7 @@ export default function Home() {
               )}
             >
               <Shield
-                className={cn(
-                  "h-8 w-8 text-red-600 dark:text-red-400"
-                )}
+                className={cn("h-8 w-8 text-red-600 dark:text-red-400")}
               />
               <h3
                 className={cn(
@@ -572,9 +518,7 @@ export default function Home() {
               )}
             >
               <TrendingUp
-                className={cn(
-                  "h-8 w-8 text-cyan-600 dark:text-cyan-400"
-                )}
+                className={cn("h-8 w-8 text-cyan-600 dark:text-cyan-400")}
               />
               <h3
                 className={cn(
@@ -588,19 +532,15 @@ export default function Home() {
                   "mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400"
                 )}
               >
-                Make data-driven decisions with detailed analytics. Track
-                growth trends and optimize your marketing strategy.
+                Make data-driven decisions with detailed analytics. Track growth
+                trends and optimize your marketing strategy.
               </p>
             </div>
           </div>
         </div>
 
         {/* Benefits Section */}
-        <div
-          className={cn(
-            "mt-32 w-full"
-          )}
-        >
+        <div className={cn("mt-32 w-full")}>
           <div className={cn("grid gap-12 lg:grid-cols-2 lg:gap-16")}>
             <div className={cn("flex flex-col justify-center")}>
               <h2
@@ -754,9 +694,7 @@ export default function Home() {
                     )}
                   >
                     Get Started Now
-                    <ArrowRight
-                      className={cn("ml-2 h-5 w-5")}
-                    />
+                    <ArrowRight className={cn("ml-2 h-5 w-5")} />
                   </Button>
                 </Link>
               </div>
@@ -781,7 +719,11 @@ export default function Home() {
             Join thousands of users who trust us for their link management
             needs.
           </p>
-          <div className={cn("mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center sm:gap-6")}>
+          <div
+            className={cn(
+              "mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center sm:gap-6"
+            )}
+          >
             <Link href="/register">
               <Button
                 size="lg"
