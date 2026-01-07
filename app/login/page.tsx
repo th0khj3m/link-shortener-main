@@ -1,11 +1,40 @@
+"use client";
+
+import type { MouseEvent } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 import { login } from "@/app/actions/auth";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 
 export default function LoginPage() {
+  const router = useRouter();
+
+  const handleBackdropClick = (event: MouseEvent<HTMLDivElement>) => {
+    if (event.target !== event.currentTarget) return;
+
+    const referrer = document.referrer;
+    if (referrer) {
+      try {
+        const referrerUrl = new URL(referrer);
+        if (referrerUrl.origin === window.location.origin) {
+          router.back();
+          return;
+        }
+      } catch {
+        // ignore malformed referrer and fallback to home navigation
+      }
+    }
+
+    router.push("/");
+  };
+
   return (
-    <div className={cn("flex min-h-screen items-center justify-center")}>
+    <div
+      className={cn("flex min-h-screen items-center justify-center")}
+      onClick={handleBackdropClick}
+    >
       <div
         className={cn(
           "w-full max-w-md space-y-8 p-8 border rounded-lg shadow-sm"
@@ -47,7 +76,7 @@ export default function LoginPage() {
           </Button>
         </form>
         <div className="text-center text-sm">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <Link href="/register" className="font-medium underline">
             Register
           </Link>
