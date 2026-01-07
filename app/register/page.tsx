@@ -16,10 +16,14 @@ export default function RegisterPage() {
 
     const referrer = document.referrer;
     if (referrer) {
-      const referrerUrl = new URL(referrer);
-      if (referrerUrl.origin === window.location.origin) {
-        router.back();
-        return;
+      try {
+        const referrerUrl = new URL(referrer);
+        if (referrerUrl.origin === window.location.origin) {
+          router.back();
+          return;
+        }
+      } catch {
+        // ignore malformed referrer and fallback to home navigation
       }
     }
 
