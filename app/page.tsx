@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div
       className={cn(
-        "flex min-h-screen flex-col items-center bg-gradient-to-b from-zinc-50 to-white dark:from-zinc-950 dark:to-black"
+        "flex min-h-screen flex-col items-center bg-gradient-to-b from-zinc-50 to-white font-sans dark:from-zinc-950 dark:to-black"
       )}
     >
       {/* Hero Section */}
