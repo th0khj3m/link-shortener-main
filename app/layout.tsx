@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Link Shortener - Shorten URLs & Track Performance",
+  title: "Thống trị toàn cõi",
   description: "Create short, memorable links in seconds. Monitor clicks, analyze traffic, and gain insights with our powerful link management platform.",
 };
 
